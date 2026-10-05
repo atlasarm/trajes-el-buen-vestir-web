@@ -10,12 +10,12 @@ export default function Home() {
     }, []);
 
     const slides = [
-        { text: "Venta de ropa formal para damas y caballeros", img: "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" }, // Trajes en boutique
-        { text: "Diseños personalizados", img: "https://images.unsplash.com/photo-1558981420-c532902e58b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" }, // Telas y herramientas
-        { text: "Confección sobre medida", img: "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" }, // Sastre midiendo
-        { text: "Uniformes corporativos", img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" }, // Equipo corporativo
-        { text: "Realizamos toda clase de arreglos de prendas de vestir, etc.", img: "https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" }, // Máquina de coser
-        { text: "Trabajos 100% garantizados", img: "https://images.unsplash.com/photo-1593032465175-481ac7f401a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" } // Detalle impecable de traje
+        { text: "Venta de ropa formal para damas y caballeros", img: "ropa_formal.jpg" },
+        { text: "Diseños personalizados", img: "diseños.jpg" },
+        { text: "Confección sobre medida", img: "confeccion.jpg" },
+        { text: "Uniformes corporativos", img: "uniformes_corporativos.PNG" },
+        { text: "Realizamos toda clase de arreglos de prendas de vestir, etc.", img: "arreglos.PNG" },
+        { text: "Trabajos 100% garantizados", img: "garantizado.PNG" }
     ];
 
     useEffect(() => {
@@ -32,13 +32,13 @@ export default function Home() {
         <>
             {/* Hero */}
             <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 z-0 bg-gray-200 dark:bg-negro">
+                <div className="absolute inset-x-0 bottom-0 top-24 md:top-28 z-0 bg-white dark:bg-negro">
                     <img
-                        src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
-                        alt="Moda Ejecutiva y Sastrería"
-                        className="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-[70%_center]"
+                        src="hero.jpg"
+                        alt="Modelos con trajes"
+                        className="absolute inset-0 w-full h-full object-cover object-[80%_center] md:object-contain lg:object-right"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent dark:from-negro dark:via-negro/85 dark:to-transparent via-50% to-75% transition-colors duration-1000"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent dark:from-negro dark:via-negro/90 dark:to-transparent via-40% to-70% transition-colors duration-1000"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col md:w-2/3 lg:w-1/2 mr-auto pt-20">
@@ -130,10 +130,10 @@ export default function Home() {
                         {/* Card 1: Colección Caballeros */}
                         <Link to="/catalogo/caballeros" className="bg-white dark:bg-grisMarca/30 border border-gray-200 dark:border-grisMarca p-4 hover:border-rojoMarca dark:hover:border-rojoMarca hover:-translate-y-2 hover:shadow-lg transition-all duration-300 group cursor-pointer text-center flex flex-col items-center">
                             <div className="w-full aspect-[4/5] overflow-hidden bg-gray-100 dark:bg-negro mb-5">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                                    alt="Colección Caballeros" 
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                                <img
+                                    src="caballeros.jpg"
+                                    alt="Colección Caballeros"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
                             <h4 className="text-xl font-serif text-negro dark:text-white mb-3">Colección Caballeros</h4>
@@ -143,10 +143,10 @@ export default function Home() {
                         {/* Card 2: Colección Damas */}
                         <Link to="/catalogo/damas" className="bg-white dark:bg-grisMarca/30 border border-gray-200 dark:border-grisMarca p-4 hover:border-rojoMarca dark:hover:border-rojoMarca hover:-translate-y-2 hover:shadow-lg transition-all duration-300 group cursor-pointer text-center flex flex-col items-center">
                             <div className="w-full aspect-[4/5] overflow-hidden bg-gray-100 dark:bg-negro mb-5">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
-                                    alt="Colección Damas" 
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                                <img
+                                    src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+                                    alt="Colección Damas"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
                             <h4 className="text-xl font-serif text-negro dark:text-white mb-3">Colección Damas</h4>
@@ -156,10 +156,10 @@ export default function Home() {
                         {/* Card 3: Sastrería */}
                         <Link to="/catalogo/sastreria" className="bg-white dark:bg-grisMarca/30 border border-gray-200 dark:border-grisMarca p-4 hover:border-rojoMarca dark:hover:border-rojoMarca hover:-translate-y-2 hover:shadow-lg transition-all duration-300 group cursor-pointer text-center flex flex-col items-center">
                             <div className="w-full aspect-[4/5] overflow-hidden bg-gray-100 dark:bg-negro mb-5">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                                    alt="Sastrería" 
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                                <img
+                                    src="sastreria.jpg"
+                                    alt="Sastrería"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
                             <h4 className="text-xl font-serif text-negro dark:text-white mb-3">Sastrería</h4>
@@ -169,10 +169,10 @@ export default function Home() {
                         {/* Card 4: Uniformes Corporativos */}
                         <Link to="/catalogo/uniformes" className="bg-white dark:bg-grisMarca/30 border border-gray-200 dark:border-grisMarca p-4 hover:border-rojoMarca dark:hover:border-rojoMarca hover:-translate-y-2 hover:shadow-lg transition-all duration-300 group cursor-pointer text-center flex flex-col items-center">
                             <div className="w-full aspect-[4/5] overflow-hidden bg-gray-100 dark:bg-negro mb-5">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                                    alt="Uniformes Corporativos" 
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                                <img
+                                    src="uniformes.jpg"
+                                    alt="Uniformes Corporativos"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
                             <h4 className="text-xl font-serif text-negro dark:text-white mb-3">Uniformes Corporativos</h4>
@@ -182,10 +182,10 @@ export default function Home() {
                         {/* Card 5: Arreglos de Ropa */}
                         <Link to="/catalogo/arreglos" className="bg-white dark:bg-grisMarca/30 border border-gray-200 dark:border-grisMarca p-4 hover:border-rojoMarca dark:hover:border-rojoMarca hover:-translate-y-2 hover:shadow-lg transition-all duration-300 group cursor-pointer text-center flex flex-col items-center">
                             <div className="w-full aspect-[4/5] overflow-hidden bg-gray-100 dark:bg-negro mb-5">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                                    alt="Arreglos de Ropa" 
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                                <img
+                                    src="arreglos2.jpg"
+                                    alt="Arreglos de Ropa"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
                             <h4 className="text-xl font-serif text-negro dark:text-white mb-3">Arreglos de Ropa</h4>

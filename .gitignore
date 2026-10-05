@@ -1,24 +1,34 @@
+# Compiled output
+/dist
+/node_modules
+*.tsbuildinfo
+
+# Environment variables (CRÍTICO: evita subir secretos a GitHub)
+.env
+.env.*
+!.env.example
+
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Unit and E2E Testing (NestJS + Jest)
+/coverage
+/.nyc_output
 
-# Editor directories and files
+# IDEs & Editors
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS metadata
+.DS_Store
+Thumbs.db
